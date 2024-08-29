@@ -10,7 +10,6 @@ body, html {
     font-style: normal;
 }
 
-/* Estilo para o fundo com a imagem */
 .background {
     background-image: url('img/background.jpg');
     background-size: cover;
@@ -21,7 +20,6 @@ body, html {
     align-items: center;
 }
 
-/* Estilo para a seção de conteúdo à esquerda */
 .content {
     display: flex;
     align-items: flex-start;
@@ -31,29 +29,25 @@ body, html {
     max-width: 800px;
 }
 
-/* Nova seção para agrupar a imagem do perfil e os ícones */
 .profile-section {
     display: flex;
     flex-direction: column;
-    align-items: center; /* Centraliza os ícones em relação à imagem */
+    align-items: center; 
 }
 
-/* Estilo para o círculo onde a imagem será colocada */
 .profile-pic {
     width: 150px;
     height: 150px;
     border-radius: 50%;
     overflow: hidden;
-    margin-bottom: 15px; /* Espaçamento entre a imagem e os ícones */
+    margin-bottom: 15px; 
 }
 
-/* Estilo para a imagem dentro do círculo */
 .profile-pic img {
     width: 100%;
     height: auto;
 }
 
-/* Estilo para o texto e título */
 .text {
     display: flex;
     flex-direction: column;
@@ -65,10 +59,9 @@ h1 {
     margin-bottom: 10px;
 }
 
-/* Estilo para os ícones de redes sociais */
 .social-icons {
     display: flex;
-    justify-content: center; /* Centraliza os ícones abaixo da imagem */
+    justify-content: center;
 }
 
 .social-icons a {
@@ -82,7 +75,6 @@ h1 {
     height: 30px;
 }
 
-/* Remove o último margin-right para o alinhamento perfeito */
 .social-icons a:last-child {
     margin-right: 0;
 }
