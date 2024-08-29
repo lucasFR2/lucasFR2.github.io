@@ -11,10 +11,10 @@ document.addEventListener('DOMContentLoaded', function() {
                 currentTitle += text.charAt(index);
                 document.title = currentTitle;
                 index++;
-                setTimeout(typeTitle, 150); // Ajuste a velocidade da digitação
+                setTimeout(typeTitle, 150);
             } else {
                 isErasing = true;
-                setTimeout(eraseTitle, 2000); // Tempo antes de começar o apagamento
+                setTimeout(eraseTitle, 2000);
             }
         }
     }
@@ -23,15 +23,14 @@ document.addEventListener('DOMContentLoaded', function() {
         if (currentTitle.length > 0) {
             currentTitle = currentTitle.slice(0, -1);
             document.title = currentTitle;
-            setTimeout(eraseTitle, 100); // Ajuste a velocidade do apagamento
+            setTimeout(eraseTitle, 100);
         } else {
-            // Define um título padrão brevemente antes de reiniciar a digitação
             document.title = defaultTitle;
             setTimeout(() => {
                 index = 0;
                 isErasing = false;
-                setTimeout(typeTitle, 500); // Tempo de pausa antes de recomeçar a digitação
-            }, 1000); // Tempo do título padrão
+                setTimeout(typeTitle, 500); 
+            }, 1000); 
         }
     }
 
