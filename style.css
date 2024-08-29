@@ -21,17 +21,20 @@ body, html {
 
 .content {
     display: flex;
+    flex-direction: row;
     align-items: flex-start;
     padding: 20px;
     margin-left: 100px;
     border-radius: 10px;
     max-width: 800px;
+    background-color: rgba(0, 0, 0, 0.5);
+    box-sizing: border-box;
 }
 
 .profile-section {
     display: flex;
     flex-direction: column;
-    align-items: center; 
+    align-items: center;
 }
 
 .profile-pic {
@@ -39,7 +42,7 @@ body, html {
     height: 150px;
     border-radius: 50%;
     overflow: hidden;
-    margin-bottom: 15px; 
+    margin-bottom: 15px;
 }
 
 .profile-pic img {
@@ -48,33 +51,59 @@ body, html {
 }
 
 .text {
-    display: flex;
-    flex-direction: column;
     margin-left: 40px;
-    max-width: 600px;
     color: white;
-}
-
-h1 {
-    margin-bottom: 10px;
+    max-width: 600px;
 }
 
 .social-icons {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
+    margin-top: 15px;
 }
 
 .social-icons a {
     margin-right: 10px;
     text-decoration: none;
     color: white;
-}
-
-.social-icons img {
-    width: 30px;
-    height: 30px;
+    font-size: 1.5rem;
 }
 
 .social-icons a:last-child {
     margin-right: 0;
+}
+
+/* Centralizar foto e redes sociais em dispositivos menores */
+@media (max-width: 600px) {
+    .background {
+        justify-content: center;
+    }
+
+    .content {
+        flex-direction: column;
+        align-items: center;
+        margin-left: 0;
+        padding: 15px;
+        text-align: center;
+    }
+
+    .text {
+        margin-left: 0;
+        margin-top: 20px;
+        font-size: 0.9rem;
+    }
+
+    .profile-pic {
+        width: 120px;
+        height: 120px;
+    }
+
+    .social-icons {
+        justify-content: center;
+        margin-top: 20px;
+    }
+
+    .social-icons a {
+        font-size: 1.2rem;
+    }
 }
