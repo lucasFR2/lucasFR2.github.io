@@ -73,7 +73,6 @@ body, html {
     margin-right: 0;
 }
 
-/* Centralizar foto e redes sociais em dispositivos menores */
 @media (max-width: 600px) {
     .background {
         justify-content: center;
