@@ -1,0 +1,88 @@
+/* Define o estilo para a página inteira */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    font-family: "SUSE", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: medium;
+    font-style: normal;
+}
+
+/* Estilo para o fundo com a imagem */
+.background {
+    background-image: url('img/background.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+/* Estilo para a seção de conteúdo à esquerda */
+.content {
+    display: flex;
+    align-items: flex-start;
+    padding: 20px;
+    margin-left: 50px;
+    border-radius: 10px;
+    max-width: 800px;
+}
+
+/* Nova seção para agrupar a imagem do perfil e os ícones */
+.profile-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza os ícones em relação à imagem */
+}
+
+/* Estilo para o círculo onde a imagem será colocada */
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-bottom: 15px; /* Espaçamento entre a imagem e os ícones */
+}
+
+/* Estilo para a imagem dentro do círculo */
+.profile-pic img {
+    width: 100%;
+    height: auto;
+}
+
+/* Estilo para o texto e título */
+.text {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    color: white;
+}
+
+h1 {
+    margin-bottom: 10px;
+}
+
+/* Estilo para os ícones de redes sociais */
+.social-icons {
+    display: flex;
+    justify-content: center; /* Centraliza os ícones abaixo da imagem */
+}
+
+.social-icons a {
+    margin-right: 10px;
+    text-decoration: none;
+    color: white;
+}
+
+.social-icons img {
+    width: 30px;
+    height: 30px;
+}
+
+/* Remove o último margin-right para o alinhamento perfeito */
+.social-icons a:last-child {
+    margin-right: 0;
+}
